@@ -1,0 +1,133 @@
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+body {
+    background-color: #555;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav a {font-size: 18px;}
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+li {
+    box-sizing: border-box;
+    list-style: none;
+    width: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url(origa___.ttf) format("truetype");
+}
+
+p {
+    color: white;
+    font-family: 'Pixel', Courier, monospace;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+h1 {
+    color: white;
+    font-family: 'Pixel', Courier, monospace;
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -280%);
+}
+
+.logo {
+    width: 60%;
+    height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .gallery {
+      width: 20%;
+      height: auto;
+  }
+
+  #bannerimage {
+    width: 100%;
+    background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+    height: 205px;
+    background-color: grey;
+    background-position: center;
+  }
